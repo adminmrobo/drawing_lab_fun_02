@@ -58,55 +58,55 @@
     {
       "key": "cover_index",
       "style": "16bit pixel art",
-      "status": "requested",
+      "status": "received",
       "file": "assets/img/cover_index.webp"
     },
     {
       "key": "cover_01",
       "style": "16bit pixel art",
-      "status": "requested",
+      "status": "received",
       "file": "assets/img/cover_01.webp"
     },
     {
       "key": "cover_02",
       "style": "16bit pixel art",
-      "status": "requested",
+      "status": "received",
       "file": "assets/img/cover_02.webp"
     },
     {
       "key": "cover_03",
       "style": "16bit pixel art",
-      "status": "requested",
+      "status": "received",
       "file": "assets/img/cover_03.webp"
     },
     {
       "key": "cover_04",
       "style": "16bit pixel art",
-      "status": "requested",
+      "status": "received",
       "file": "assets/img/cover_04.webp"
     },
     {
       "key": "cover_05",
       "style": "16bit pixel art",
-      "status": "requested",
+      "status": "received",
       "file": "assets/img/cover_05.webp"
     },
     {
       "key": "cover_06",
       "style": "16bit pixel art",
-      "status": "requested",
+      "status": "received",
       "file": "assets/img/cover_06.webp"
     },
     {
       "key": "cover_07",
       "style": "16bit pixel art",
-      "status": "requested",
+      "status": "received",
       "file": "assets/img/cover_07.webp"
     },
     {
       "key": "cover_08",
       "style": "16bit pixel art",
-      "status": "requested",
+      "status": "received",
       "file": "assets/img/cover_08.webp"
     }
   ],
@@ -115,7 +115,7 @@
     "fail": 8,
     "compare_b": 14,
     "drill": 7,
-    "received": 0
+    "received": 50
   },
   "translations": []
 }

@@ -337,3 +337,9 @@ P7 = dict(
         ("fruitfly","e09","연습장에서는 군집을 맞히고, 문장을 조립하고, 실패를 진단해.")],
  prev=("06_media_outfit.html", "← 6부 매체·옷 베리에이션"), next=("practice/index.html", "8부 실전 연습장 →"),
 )
+
+# 받은 실패 그림에 맞춘 주석(img_notes.FAIL_NOTE)
+from img_notes import FAIL_NOTE as _FN
+for _f in P7["fails"]:
+    if _f["key"] in _FN:
+        _f["note"] = ((_f.get("note") + " ") if _f.get("note") else "") + _FN[_f["key"]]
