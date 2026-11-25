@@ -1,0 +1,121 @@
+{
+  "series_ko": "연구실 특별편 · 그리기와 렌더링",
+  "title_ko": "구조 먼저 그리기 연구실 · 웃음 편 2 · 베리에이션",
+  "site_url": "https://adminmrobo.github.io/drawing_lab_fun_02/",
+  "site_title": "구조 먼저 그리기 연구실 · 웃음 편 2 · 베리에이션 — 같은 캐릭터, 다른 그림",
+  "version": "v1.0",
+  "date": "2026-11-25",
+  "ontology": {
+    "pages": [
+      {
+        "path": "index.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "01_era.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "02_line.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "03_mono.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "04_proportion.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "05_expression.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "06_media_outfit.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "07_failure_lab.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "practice/index.html",
+        "kg": true,
+        "export": true
+      }
+    ]
+  },
+  "covers": [
+    {
+      "key": "cover_index",
+      "style": "16bit pixel art",
+      "status": "requested",
+      "file": "assets/img/cover_index.webp"
+    },
+    {
+      "key": "cover_01",
+      "style": "16bit pixel art",
+      "status": "requested",
+      "file": "assets/img/cover_01.webp"
+    },
+    {
+      "key": "cover_02",
+      "style": "16bit pixel art",
+      "status": "requested",
+      "file": "assets/img/cover_02.webp"
+    },
+    {
+      "key": "cover_03",
+      "style": "16bit pixel art",
+      "status": "requested",
+      "file": "assets/img/cover_03.webp"
+    },
+    {
+      "key": "cover_04",
+      "style": "16bit pixel art",
+      "status": "requested",
+      "file": "assets/img/cover_04.webp"
+    },
+    {
+      "key": "cover_05",
+      "style": "16bit pixel art",
+      "status": "requested",
+      "file": "assets/img/cover_05.webp"
+    },
+    {
+      "key": "cover_06",
+      "style": "16bit pixel art",
+      "status": "requested",
+      "file": "assets/img/cover_06.webp"
+    },
+    {
+      "key": "cover_07",
+      "style": "16bit pixel art",
+      "status": "requested",
+      "file": "assets/img/cover_07.webp"
+    },
+    {
+      "key": "cover_08",
+      "style": "16bit pixel art",
+      "status": "requested",
+      "file": "assets/img/cover_08.webp"
+    }
+  ],
+  "images": {
+    "body": 12,
+    "fail": 8,
+    "compare_b": 14,
+    "drill": 7,
+    "received": 0
+  },
+  "translations": []
+}
