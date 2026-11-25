@@ -2,6 +2,7 @@
 
 ## d5 — 흑백 굿즈용 하루 — 머리와 옷을 구별하기
 첨부: refs/haru_anime_base.png, refs/haru_sheet.png
+순서: 새 대화를 열고 참고 그림을 첨부합니다. / 아래 프롬프트로 한 장을 만듭니다. / 받은 그림에서 머리와 옷의 경계가 또렷한지 봅니다. / 흐리면 같은 대화에 'Change only: make the hoodie a darker screentone' 한 줄만 넣습니다.
 
 ### d5_haru_mono (넣을 프롬프트)
 alt: 예상 결과 — 흑백 만화풍 하루. 머리는 옅은 망점, 후드는 진한 망점, 랩코트는 흰색으로 구별됨

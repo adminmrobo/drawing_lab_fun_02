@@ -7,6 +7,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from content_a import P1, P2, P4
 from content_c import P3
 from content_b import P5, P6, P7
+from content_extra import EXTRA as _EXTRA
 from content_make import MAKE
 from make_requests import PROMPTS, CONV_OF, ATTACH_OF
 from img_notes import ALT, DRILL_RES, RETRY_RES, RETRY3_RES
@@ -27,6 +28,10 @@ CHARREPO = "https://github.com/adminmrobo/fruitfly-lab-expressions"
 SERIES = "구조 먼저 그리기 연구실 · 웃음 편 2 · 베리에이션"
 E = html.escape
 PARTS = [P1, P2, P3, P4, P5, P6, P7]
+for _no, _sid, _b in _EXTRA:
+    _st = [x for x in PARTS[_no - 1]["steps"] if x["id"] == _sid][0]
+    assert not _st.get("img"), (_no, _sid)
+    _st["img"] = (_b[0], _b[3], "16/9" if "16:9" in _b[4].split("\n")[0] else "2/3")
 
 CH = {
  "doctor": ("박사", "해설 + 손님 모델(5부 지친 얼굴). 짙은 머리의 흰 줄, 굵은 눈썹, 청록 사각 안경"),
@@ -380,7 +385,7 @@ def drill_section(P):
     keys = [p[2] for d in ds for p in d["prompts"]]
     made = "예상 결과 그림은 아래 프롬프트로 실제로 만든 그림입니다. 요청과 다르게 나온 곳은 '실제 결과'에 그대로 적었습니다." if all(has_img(k) for k in keys) else "예상 결과 그림은 아래 프롬프트로 실제로 만든 그림입니다(아직 받지 않은 그림은 '그림 준비 중'). 요청과 다르게 나온 곳은 '실제 결과'에 그대로 적었습니다."
     out = f"""<section class="room" id="drill"><div class="wrap"><div class="roomno">{P['no']}부 · 연습 과제</div><h2>프롬프트 연습 과제</h2>
-<div class="box"><p>이 부의 원리를 내 손으로 프롬프트에 옮겨 보는 과제 두 개입니다. 과제마다 <b>목표 → 순서 → 넣을 프롬프트 → 확인할 것 → 예상 결과 → 자주 생기는 문제</b> 순서로 적었습니다. {made} 결과는 매번 조금씩 다르니, 그림이 똑같지 않아도 '확인할 것'이 맞으면 성공입니다.</p></div>"""
+<div class="box"><p>이 부의 원리를 내 손으로 프롬프트에 옮겨 보는 과제 {len(ds)}개입니다. 뒤의 과제일수록 1차 그림에서 실제로 겪은 문제(같은 대화에서 차이가 약함, 고정값이 쉽게 무너짐, SD가 어려 보임)를 피하는 방법을 담았습니다. 과제마다 <b>목표 → 순서 → 넣을 프롬프트 → 확인할 것 → 예상 결과 → 자주 생기는 문제</b> 순서로 적었습니다. {made} 결과는 매번 조금씩 다르니, 그림이 똑같지 않아도 '확인할 것'이 맞으면 성공입니다.</p></div>"""
     for i, d in enumerate(ds, 1):
         steps = "".join(f"<li>{E(x)}</li>" for x in d["steps"])
         prs = ""

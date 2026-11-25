@@ -115,7 +115,10 @@
     "fail": 8,
     "compare_b": 14,
     "drill": 7,
-    "received": 50
+    "received": 50,
+    "body_extra": 13,
+    "drill2": 17,
+    "requested_2nd": 30
   },
   "translations": []
 }
